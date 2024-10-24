@@ -1,0 +1,51 @@
+:root{
+    --padding_size: 20px; 
+    --background: rgb(30, 30, 30); 
+    --contrasting: rgb(50, 50, 50); 
+    --text: rgb(200, 200, 200); 
+}
+
+body{
+    background-color: var(--background);
+    margin: 0px
+}
+
+.top_bar{
+    background-color: var(--contrasting);
+    height: 50px;
+    width: 100%;
+}
+
+.base_text{ 
+    color: var(--text); 
+    font-family: 'rockwell';
+    padding: 5px;
+}
+
+.title{
+    width: fit-content; 
+    height: fit-content; 
+    margin-left: auto; 
+    margin-right: auto;
+    border: 5px solid var(--contrasting);
+}
+
+.dropdown{
+    float: left;
+    border: 5px solid var(--contrasting);
+    padding: var(--padding_size);
+    width: fit-content;
+    height: fit-content; 
+}
+
+.dropdown_contents{
+    border: 5px solid var(--contrasting); 
+    display: none; 
+    padding: var(--padding_size);
+    width: fit-content; 
+    height: fit-content; 
+}
+
+.dropdown:hover .dropdown_contents{
+    display: block; 
+}
