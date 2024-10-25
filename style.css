@@ -5,47 +5,60 @@
     --text: rgb(200, 200, 200); 
 }
 
+div{
+    border: 1px solid var(--contrasting); 
+}
+
 body{
     background-color: var(--background);
     margin: 0px
 }
 
-.top_bar{
-    background-color: var(--contrasting);
-    height: 50px;
-    width: 100%;
+h1{
+    font-size: 75px;
+}
+
+h2{
+    font-size: 25px; 
+}
+
+p{
+    font-size: 20px;
 }
 
 .base_text{ 
     color: var(--text); 
     font-family: 'rockwell';
-    padding: 5px;
+    padding: 0px; 
 }
 
-.title{
-    width: fit-content; 
-    height: fit-content; 
-    margin-left: auto; 
-    margin-right: auto;
-    border: 5px solid var(--contrasting);
+.top_bar{
+    position: fixed;
+    height: 50px; 
+    width: 100%; 
+    background-color: var(--contrasting);
 }
 
-.dropdown{
+.main_title{
     float: left;
-    border: 5px solid var(--contrasting);
-    padding: var(--padding_size);
-    width: fit-content;
-    height: fit-content; 
-}
-
-.dropdown_contents{
-    border: 5px solid var(--contrasting); 
-    display: none; 
-    padding: var(--padding_size);
     width: fit-content; 
     height: fit-content; 
+    margin-left: 100px; 
+    margin-top: 100px; 
 }
 
-.dropdown:hover .dropdown_contents{
-    display: block; 
+.title_undertext{
+    float: left; 
+    width: fit-content; 
+    height: fit-content; 
+    margin-left: 100px; 
+}
+
+.general_tutoring_info{
+    float: left; 
+    width: fit-content; 
+    height: fit-content; 
+    margin-left: 100px; 
+    margin-right: 100px;
+    margin-top: 100px; 
 }
