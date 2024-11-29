@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(15, 15, 15);
+    width: 100vw; 
+    height: 100vh; 
+    padding: 0px; 
+    margin: 0px; 
+    overflow: hidden; 
+}
+
+#nav-bar-dropdown {
+    background-color: rgb(22, 22, 22); 
+    width: 30vw; 
+    height: 4vw; 
+    position: absolute; 
+    top: 1vw; 
+    left: 50vw;
+    transform: translate(-50%, 0); 
+    border-radius: 0.25vw;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#nav-bar-dropdown:hover {
+    opacity: 1; 
+    transition: 0.2s;
+}
