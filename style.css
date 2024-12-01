@@ -3,11 +3,17 @@
     --french-grey: #B7C0CC; 
     --anti-flash-white: #EEF1EF;
     --turquoise: #3ACFC0; 
+    --python-blue: #3572A5;
 }
 
 @font-face {
     font-family: "simplyMonoBold"; 
     src: url("SimplyMono-Bold.ttf"); 
+}
+
+@font-face {
+    font-family: "simplyMono";
+    src: url("SimplyMono-Book.ttf");
 }
 
 body {
@@ -22,11 +28,42 @@ body {
 h1 {
     color: var(--anti-flash-white);
     font-family: "simplyMonoBold";
-    font-size: 4vw;
+    font-size: 8vh;
+    line-height: 8vh;
+}
+
+h2 {
+    color: var(--anti-flash-white);
+    font-family: "simplyMonoBold";
+    font-size: 6vh;
+}
+
+p {
+    color: var(--french-grey);
+    font-family: "simplyMono";
+    font-size: 2.5vh;
+}
+
+.python-color {
+    color: var(--python-blue);
+}
+
+.icon {
+    width: 3vw;
+    height: 3vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.25s;
+}
+
+.icon:hover{
+    width: 4vw;
+    height: 4vw;
+    transition: 0.25s;
 }
 
 .background-div {
-    background-color: var(--charcoal); 
     width: 100vw; 
     height: 100vh; 
     padding: 0px;
@@ -46,12 +83,49 @@ h1 {
     transform: translate(-50%, -50%)
 }
 
+.page-title {
+    width: fit-content;
+    height: fit-content; 
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+
+.page-text {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+
+.language-module-div {
+    width: fit-content; 
+    height: fit-content; 
+    position: absolute;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    bottom: 0;
+    right: 0;
+}
+
 .arrow {
-    background-color: var(--turquoise); 
-    width: 2vw; 
-    height: 2vw; 
+    background-color: var(--french-grey); 
+    width: 3vw; 
+    height: 3vw; 
     position: absolute; 
     border-radius: 0.4vw;
+    transition: 0.25s;
+}
+
+.arrow:hover{ 
+    background-color: var(--turquoise); 
+    transition: 0.25s; 
+    width: 4vw;
+    height: 4vw;
+    border-radius: 0.6vw;
 }
 
 #up-arrow {
@@ -76,4 +150,28 @@ h1 {
     right: 1vw; 
     top: 50vh;
     transform: translate(0, -50%);
+}
+
+.page-info-container {
+    width: 90vw; 
+    height: calc(100vh - 10vw); 
+    top: 5vw; 
+    left: 5vw;
+    position: absolute; 
+}
+
+.page-info-left {
+    width: 42.5vw; 
+    height: calc(100vh - 10vw);
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.page-info-right {
+    width: 42.5vw; 
+    height: calc(100vh - 10vw);
+    top: 0;
+    right: 0;
+    position: absolute;
 }

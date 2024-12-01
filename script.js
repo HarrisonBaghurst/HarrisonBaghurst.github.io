@@ -13,43 +13,6 @@ let nextPage = document.getElementById(pageMap[currentIndex[1]][currentIndex[0]]
 let transitioning = false 
 transitionFromTo(currentPage, 0, 0, 0, 0, true)
 
-// add arrow divs to pages 
-for (let i = 0; i < pageMap.length; i++) {
-    for (let j = 0; j <pageMap[i].length; j++) {
-        if (pageMap[i][j] != null) {
-            let currentPage = document.getElementById(pageMap[i][j])
-            if (pageMap[i - 1][j] != null) {
-                let upDiv = document.createElement("div")
-                upDiv.className = "arrow"
-                upDiv.id = "up-arrow"
-                upDiv.addEventListener("click", () => beginTransition("up"))
-                currentPage.appendChild(upDiv)
-            }
-            if (pageMap[i + 1][j] != null) {
-                let downDiv = document.createElement("div")
-                downDiv.className = "arrow"
-                downDiv.id = "down-arrow"
-                downDiv.addEventListener("click", () => beginTransition("down"))
-                currentPage.appendChild(downDiv)
-            }
-            if (pageMap[i][j - 1] != null) {
-                let leftDiv = document.createElement("div")
-                leftDiv.className = "arrow"
-                leftDiv.id = "left-arrow"
-                leftDiv.addEventListener("click", () => beginTransition("left"))
-                currentPage.appendChild(leftDiv)
-            }
-            if (pageMap[i][j + 1] != null) {
-                let rightDiv = document.createElement("div")
-                rightDiv.className = "arrow"
-                rightDiv.id = "right-arrow"
-                rightDiv.addEventListener("click", () => beginTransition("right"))
-                currentPage.appendChild(rightDiv)
-            }
-        }
-    }
-}
-
 //instant move 
 function transitionFromTo(element, sTop, sLeft, eTop, eLeft, end) { 
     element.style.transition = "none" 
