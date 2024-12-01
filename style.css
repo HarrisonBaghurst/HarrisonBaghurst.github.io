@@ -4,6 +4,9 @@
     --anti-flash-white: #EEF1EF;
     --turquoise: #3ACFC0; 
     --python-blue: #3572A5;
+    --html-color: #e44b23;
+    --css-color: #8b59d5;
+    --javascript-color: #f1e05a;
 }
 
 @font-face {
@@ -46,6 +49,18 @@ p {
 
 .python-color {
     color: var(--python-blue);
+}
+
+.html-color {
+    color: var(--html-color);
+}
+
+.css-color {
+    color: var(--css-color);
+}
+
+.javascript-color {
+    color: var(--javascript-color);
 }
 
 .icon {
