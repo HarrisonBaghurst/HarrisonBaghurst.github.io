@@ -1,5 +1,17 @@
+:root {
+    --charcoal: #464655;
+    --french-grey: #B7C0CC; 
+    --anti-flash-white: #EEF1EF;
+    --turquoise: #3ACFC0; 
+}
+
+@font-face {
+    font-family: "simplyMonoBold"; 
+    src: url("SimplyMono-Bold.ttf"); 
+}
+
 body {
-    background-color: rgb(15, 15, 15);
+    background-color: var(--charcoal);
     width: 100vw; 
     height: 100vh; 
     padding: 0px; 
@@ -7,20 +19,61 @@ body {
     overflow: hidden; 
 }
 
-#nav-bar-dropdown {
-    background-color: rgb(22, 22, 22); 
-    width: 30vw; 
-    height: 4vw; 
+h1 {
+    color: var(--anti-flash-white);
+    font-family: "simplyMonoBold";
+    font-size: 4vw;
+}
+
+.background-div {
+    background-color: var(--charcoal); 
+    width: 100vw; 
+    height: 100vh; 
+    padding: 0px;
+    margin: 0px; 
     position: absolute; 
+    top: -100vh;
+    left: -100vw;
+    transition: all 0.5s ease-in-out;
+}
+
+.center-title {
+    width: fit-content; 
+    height: fit-content; 
+    position: absolute; 
+    top: 50vh;
+    left: 50vw; 
+    transform: translate(-50%, -50%)
+}
+
+.arrow {
+    background-color: var(--turquoise); 
+    width: 2vw; 
+    height: 2vw; 
+    position: absolute; 
+    border-radius: 0.4vw;
+}
+
+#up-arrow {
     top: 1vw; 
     left: 50vw;
     transform: translate(-50%, 0); 
-    border-radius: 0.25vw;
-    opacity: 0;
-    transition: 0.2s;
 }
 
-#nav-bar-dropdown:hover {
-    opacity: 1; 
-    transition: 0.2s;
+#down-arrow {
+    bottom: 1vw; 
+    left: 50vw; 
+    transform: translate(-50%, 0);
+}
+
+#left-arrow {
+    left: 1vw; 
+    top: 50vh; 
+    transform: translate(0, -50%); 
+}
+
+#right-arrow {
+    right: 1vw; 
+    top: 50vh;
+    transform: translate(0, -50%);
 }
