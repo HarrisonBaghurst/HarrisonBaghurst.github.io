@@ -11,17 +11,26 @@
     <body>
 
         <div class="background-div" id="title-page-div">
-            <div class="center-title">
-                <h1>Project Portfolio</h1>
-                <p>Harrison Baghurst</p>
-                <p>Contact: harrison.t.baghurst@durham.ac.uk</p>
-            </div>
             <div class="page-info-container">
                 <div class="language-module-div">
                     <p>
                         [<span class="html-color">HTML</span>, <span class="css-color">CSS</span>, <span class="javascript-color">JavaScript</span>]
                     </p>
                 </div>
+                <div class="github-link-div">
+                    <div class="github-link-img">
+                        <img src="icons\\brand-github.svg" class="static-icon">
+                    </div>
+                    <div class="github-link-img">
+                        <img src="icons\\lock-open.svg" class="static-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="center-title">
+                <h1>Project Portfolio</h1>
+                <p>Harrison Baghurst</p>
+                <p>Contact information found on Github</p>
+                <a href="https://github.com/HarrisonBaghurst?tab=repositories">My Github Repositories</a>
             </div>
             <div class="arrow" id="down-arrow" onclick="beginTransition('down')">
                 <img src="icons\\align-box-left-top.svg" class="icon">
@@ -90,6 +99,14 @@
                             [<span class="python-color">Python</span>, Pygame]
                         </p>
                     </div>
+                    <div class="github-link-div">
+                        <div class="github-link-img">
+                            <img src="icons\\brand-github.svg" class="static-icon">
+                        </div>
+                        <div class="github-link-img">
+                            <img src="icons\\lock.svg" class="static-icon">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="arrow" id="up-arrow" onclick="beginTransition('up')">
@@ -106,12 +123,37 @@
                     <div class="page-title">
                         <h2>LSB Steganography</h2>
                     </div>
+                    <div class="page-text">
+                        <p>
+                            Steganography is the practice of concealing messages or information within other non-secret text or data.
+                            LSB stands for Least Significant Bit and refers to the place that the data is stored.
+                        </p>
+                        <p>
+                            This project has two parts:
+                        </p>
+                        <ul>
+                            <li>
+                                Encoding - this takes an input image and an input text file and returns the image with the text encoded into it.
+                            </li>
+                            <li>
+                                Decoding - this takes an image with text encoded into it and decodes the text returning it in a text file.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="page-info-right">
                     <div class="language-module-div">
                         <p>
                             [<span class="python-color">Python</span>, Png]
                         </p>
+                    </div>
+                    <div class="github-link-div">
+                        <div class="github-link-img">
+                            <img src="icons\\brand-github.svg" class="static-icon">
+                        </div>
+                        <div class="github-link-img">
+                            <img src="icons\\lock-open.svg" class="static-icon">
+                        </div>
                     </div>
                 </div>
             </div>            
@@ -129,12 +171,33 @@
                     <div class="page-title">
                         <h2>Spotify Volume Switcher</h2>
                     </div>
+                    <div class="page-text">
+                        <p>
+                            I started this project with the goal of having a keybaord shortcut that changes my Spotify volume between specific values without changing the system volume.
+                            I realised that this can be done with the Spotify API. 
+                            I used a version of the Spotify API for Python called Spotipy.
+                        </p>
+                        <p>
+                            The script reads from a text file to get the volumes to switch between and calls the Spotify API to change the volume to the next in the list.
+                        </p>
+                        <p>
+                            The script requires the user to have access to the Spotify API as it requires a client_id and a secret_id.
+                        </p>
+                    </div>
                 </div>
                 <div class="page-info-right">
                     <div class="language-module-div">
                         <p>
                             [<span class="python-color">Python</span>, Spotipy]
                         </p>
+                    </div>
+                    <div class="github-link-div">
+                        <div class="github-link-img">
+                            <img src="icons\\brand-github.svg" class="static-icon">
+                        </div>
+                        <div class="github-link-img">
+                            <img src="icons\\lock-open.svg" class="static-icon">
+                        </div>
                     </div>
                 </div>
             </div>

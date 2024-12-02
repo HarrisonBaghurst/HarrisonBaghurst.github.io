@@ -26,25 +26,44 @@ body {
     padding: 0px; 
     margin: 0px; 
     overflow: hidden; 
+    font-size: min(2.5vh, 1.75vw);
 }
 
 h1 {
     color: var(--anti-flash-white);
     font-family: "simplyMonoBold";
-    font-size: 8vh;
-    line-height: 8vh;
+    font-size: 3em;
+    line-height: 2.5em;
 }
 
 h2 {
     color: var(--anti-flash-white);
     font-family: "simplyMonoBold";
-    font-size: 6vh;
+    font-size: 2em;
 }
 
 p {
     color: var(--french-grey);
     font-family: "simplyMono";
-    font-size: 2.5vh;
+    font-size: 1em;
+}
+
+li {
+    color: var(--french-grey);
+    font-family: "simplyMono";
+    font-size: 1em;
+}
+
+a {
+    color: var(--french-grey);
+    font-family: "simplyMono";
+    font-size: 1em;
+    transition: 0.25s;
+}
+
+a:hover {
+    color: var(--turquoise);
+    transition: 0.25s;
 }
 
 .python-color {
@@ -64,18 +83,23 @@ p {
 }
 
 .icon {
-    width: 3vw;
-    height: 3vw;
+    width: 2em;
+    height: 2em;
     top: 0;
     left: 0;
     position: absolute;
     transition: 0.25s;
 }
 
-.icon:hover{
-    width: 4vw;
-    height: 4vw;
+.icon:hover {
+    width: 3em;
+    height: 3em;
     transition: 0.25s;
+}
+
+.static-icon {
+    width: 2em;
+    height: 2em;
 }
 
 .background-div {
@@ -120,49 +144,67 @@ p {
     width: fit-content; 
     height: fit-content; 
     position: absolute;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
+    padding-left: 1em;
+    padding-right: 1em;
     bottom: 0;
     right: 0;
 }
 
+.github-link-div {
+    width: 2em;
+    height: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding-top: 1em;
+    padding-right: 3em;
+}
+
+.github-link-img {
+    width: fit-content;
+    height: fit-content;
+    flex: 1;
+}
+
+
 .arrow {
     background-color: var(--french-grey); 
-    width: 3vw; 
-    height: 3vw; 
+    width: 2em; 
+    height: 2em; 
     position: absolute; 
-    border-radius: 0.4vw;
+    border-radius: 0.4em;
     transition: 0.25s;
 }
 
 .arrow:hover{ 
     background-color: var(--turquoise); 
     transition: 0.25s; 
-    width: 4vw;
-    height: 4vw;
-    border-radius: 0.6vw;
+    width: 3em;
+    height: 3em;
+    border-radius: 0.6em;
 }
 
 #up-arrow {
-    top: 1vw; 
+    top: 1em; 
     left: 50vw;
     transform: translate(-50%, 0); 
 }
 
 #down-arrow {
-    bottom: 1vw; 
+    bottom: 1em; 
     left: 50vw; 
     transform: translate(-50%, 0);
 }
 
 #left-arrow {
-    left: 1vw; 
+    left: 1em; 
     top: 50vh; 
     transform: translate(0, -50%); 
 }
 
 #right-arrow {
-    right: 1vw; 
+    right: 1em; 
     top: 50vh;
     transform: translate(0, -50%);
 }
