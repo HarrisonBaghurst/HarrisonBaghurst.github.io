@@ -26,7 +26,7 @@ body {
     padding: 0px; 
     margin: 0px; 
     overflow: hidden; 
-    font-size: min(2.5vh, 1.75vw);
+    font-size: min(2.5vh, 1.5vw);
 }
 
 h1 {
@@ -64,6 +64,7 @@ a {
 a:hover {
     color: var(--turquoise);
     transition: 0.25s;
+    font-size: 1.25em;
 }
 
 .python-color {
@@ -117,7 +118,7 @@ a:hover {
     width: fit-content; 
     height: fit-content; 
     position: absolute; 
-    top: 50vh;
+    top: 45vh;
     left: 50vw; 
     transform: translate(-50%, -50%)
 }
