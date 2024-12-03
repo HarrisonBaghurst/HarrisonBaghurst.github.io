@@ -67,6 +67,12 @@ a:hover {
     font-size: 1.25em;
 }
 
+video {
+    width: 24em;
+    height: 13.5em;
+    border-radius: 0.4em;
+}
+
 .title-link { 
     width: fit-content; 
     height: 1.25em; 
@@ -182,6 +188,14 @@ a:hover {
     flex: 1;
 }
 
+.video-div {
+    width: fit-content;
+    height: fit-content; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .arrow {
     background-color: var(--french-grey); 
