@@ -67,6 +67,20 @@ a:hover {
     font-size: 1.25em;
 }
 
+.title-link { 
+    width: fit-content; 
+    height: 1.25em; 
+    position: absolute; 
+}
+
+.page-link {
+    width: fit-content; 
+    height: 1.25em; 
+    position: absolute;
+    top: 2.25em;
+    left: 2em;
+}
+
 .python-color {
     color: var(--python-blue);
 }
@@ -129,16 +143,16 @@ a:hover {
     position: relative;
     top: 0;
     left: 0;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .page-text {
     width: fit-content;
     height: fit-content;
     position: absolute;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .language-module-div {
@@ -158,7 +172,7 @@ a:hover {
     top: 0;
     right: 0;
     display: flex;
-    padding-top: 1em;
+    padding-top: 2.25em;
     padding-right: 3em;
 }
 
