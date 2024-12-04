@@ -7,6 +7,8 @@
     --html-color: #e44b23;
     --css-color: #8b59d5;
     --javascript-color: #f1e05a;
+    touch-action: pan-x pan-y;
+    height: 100%;
 }
 
 @font-face {
