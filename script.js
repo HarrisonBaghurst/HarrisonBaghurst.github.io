@@ -1,7 +1,7 @@
 // set up map of pages and current page div
 let pageMap = [
     [null, null, null, null, null],
-    [null, "about-me-div", "title-page-div", "education-div", null],
+    [null, "education-div", "title-page-div", "about-me-div", null],
     [null, null, "soft-blocked-div", null, null],
     [null, null, "steganography-div", null, null],
     [null, null, "spotify-div", null, null],
