@@ -61,31 +61,31 @@ function beginTransition(direction) {
     if (transitioning === false) {
         if (direction === "up" && pageMap[currentIndex[1] - 1][currentIndex[0]] != null) {
             transitioning = true
-            transitionFromTo(currentPage, 0, 0, "100vh", 0, false)
+            transitionFromTo(currentPage, 0, 0, "100dvh", 0, false)
             currentIndex[1] -= 1
             nextPage = document.getElementById(pageMap[currentIndex[1]][currentIndex[0]])
-            transitionFromTo(nextPage, "-100vh", 0, 0, 0, true)
+            transitionFromTo(nextPage, "-100dvh", 0, 0, 0, true)
         }
         else if (direction == "down" && pageMap[currentIndex[1] + 1][currentIndex[0]] != null) {
             transitioning = true
-            transitionFromTo(currentPage, 0, 0, "-100vh", 0, false)
+            transitionFromTo(currentPage, 0, 0, "-100dvh", 0, false)
             currentIndex[1] += 1
             nextPage = document.getElementById(pageMap[currentIndex[1]][currentIndex[0]])
-            transitionFromTo(nextPage, "100vh", 0, 0, 0, true)
+            transitionFromTo(nextPage, "100dvh", 0, 0, 0, true)
         }
         else if (direction == "left" && pageMap[currentIndex[1]][currentIndex[0] - 1] != null) {
             transitioning = true
-            transitionFromTo(currentPage, 0, 0, 0, "100vw", false)
+            transitionFromTo(currentPage, 0, 0, 0, "100dvw", false)
             currentIndex[0] -= 1 
             nextPage = document.getElementById(pageMap[currentIndex[1]][currentIndex[0]])
-            transitionFromTo(nextPage, 0, "-100vw", 0, 0, true)
+            transitionFromTo(nextPage, 0, "-100dvw", 0, 0, true)
         }
         else if (direction == "right" && pageMap[currentIndex[1]][currentIndex[0] + 1] != null) { 
             transitioning = true
-            transitionFromTo(currentPage, 0, 0, 0, "-100vw", false)
+            transitionFromTo(currentPage, 0, 0, 0, "-100dvw", false)
             currentIndex[0] += 1 
             nextPage = document.getElementById(pageMap[currentIndex[1]][currentIndex[0]])
-            transitionFromTo(nextPage, 0, "100vw", 0, 0, true)
+            transitionFromTo(nextPage, 0, "100dvw", 0, 0, true)
         }
     }
 }
