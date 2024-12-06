@@ -105,6 +105,10 @@ video {
     color: var(--javascript-color);
 }
 
+.highlight-color {
+    color: var(--anti-flash-white);
+}
+
 .icon {
     width: 2em;
     height: 2em;
