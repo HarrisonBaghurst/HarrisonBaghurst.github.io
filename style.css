@@ -75,6 +75,12 @@ video {
     border-radius: 0.4em;
 }
 
+.image {
+    width: 24em;
+    height: 13.5em;
+    border-radius: 0.4em;
+}
+
 .title-link { 
     width: fit-content; 
     height: 1.25em; 
@@ -194,7 +200,7 @@ video {
     flex: 1;
 }
 
-.video-div {
+.image-video-div {
     width: fit-content;
     height: fit-content; 
     position: absolute;
