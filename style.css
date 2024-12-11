@@ -273,3 +273,66 @@ video {
     right: 0;
     position: absolute;
 }
+
+@media (max-width: 479px) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p { 
+        font-size: 1.5em;
+    }
+
+    li {
+        font-size: 1.5em;
+    }
+
+    a {
+        font-size: 1.5em;
+    }
+
+    a:hover {
+        font-size: 2em;
+    }
+
+    video {
+        width: 40em;
+        height: 22.5em;
+        border-radius: 0.6em;
+    }
+    
+    .image {
+        width: 40em;
+        height: 22.5em;
+        border-radius: 0.6em;
+    }
+
+    .page-info-container {
+        width: 90dvw; 
+        height: calc(100dvh - 10dvw); 
+        top: 5dvw; 
+        left: 5dvw;
+        position: absolute; 
+    }
+    
+    .page-info-left {
+        width: 90vw; 
+        height: calc((100dvh - 10dvw) / 2);
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    
+    .page-info-right {
+        width: 90dvw; 
+        height: calc((100dvh - 10dvw) / 2);
+        top: 50%;
+        right: 0;
+        position: absolute;
+    }
+}
